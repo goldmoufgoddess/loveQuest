@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,4 +38,45 @@
 
         <script src="script.js"></script>
     </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Love Quest</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="app">
+            <h1>💖 Love Quest 💖</h1>
+            <p>Collect 5 hearts to unlock your special question</p>
+
+            <div class ="score">Hearts: <span id="score">0</span>/5</div>
+            <div id="loveNote">Collect a heart for a surprise 💕</div>
+
+            <div id="gameArea">
+                <div id="player">🤭</div>
+                <div id="heart">❤️</div>
+            </div>
+
+            <div class="contols">
+                <button onclick="movePlayer('up')">⬆️</button>
+            </div>
+                <button onclick="movePlayer('left')">⬅️</button>
+                <button onclick="movePlayer('down')">⬇️</button>
+                <button onclick="movePlayer('right')">➡️</button>
+            <div>
+        </div>
+
+        <div id="questionBox" class="hidden">
+            <h2>Will you be my Scoob again? 🥹</h2>
+            <button onclick="sayYes()">Yes 💍</button>
+            <button id="noBtn" onclick="moveNo()">No 😭</button>
+        </div>
+
+        <h2 id="message"></h2>
+        <div>
+
+        <script src="script.js"></script>
+    </body>
+>>>>>>> 60ea032eaa22072695ed8002668c102edcc19018
 </html>
