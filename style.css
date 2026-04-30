@@ -81,6 +81,11 @@ p {
   background: rgba(68, 16, 91, 0.35);
 }
 
+#gameArea {
+  width: min(330px, 92vw);
+  height: min(330px, 92vw);
+}
+
 #player
 {
   position: absolute;
@@ -235,3 +240,16 @@ p {
   }
 }
 
+.controls {
+  display: block;
+  position: relative;
+  z-index: 50;
+  margin: 12px auto 20px;
+}
+
+.controls button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+}
