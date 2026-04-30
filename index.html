@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Love Quest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="app">
+            <h1>💖 Love Quest 💖</h1>
+            <p>Collect 5 hearts to unlock your special question</p>
+
+            <div class ="score">Hearts: <span id="score">0</span>/5</div>
+            <div id="loveNote">Collect a heart for a surprise 💕</div>
+
+            <div id="gameArea">
+                <div id="player">🤭</div>
+                <div id="heart">❤️</div>
+            </div>
+
+                <button ontouchstart="movePlayer('up')">⬆️</button>
+            <div>
+                <button ontouchstart="movePlayer('left')">⬅️</button>
+                <button ontouchstart="movePlayer('down')">⬇️</button>
+                <button ontouchstart="movePlayer('right')">➡️</button>
+            </div>
+        </div>
+
+        <div id="questionBox" class="hidden">
+            <h2>Will you be my Scoob again? 🥹</h2>
+            <button onclick="sayYes()">Yes 💍</button>
+            <button id="noBtn" onclick="moveNo()">No 😭</button>
+        </div>
+
+        <h2 id="message"></h2>
+        <div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
